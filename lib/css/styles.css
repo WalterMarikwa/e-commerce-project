@@ -1,1 +1,168 @@
 /* This is going to be used for any modified/custom styling */
+body {
+    font-family: 15px 'Noto Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color:x #F0F0F0;
+}
+
+@media(max-width: 700px) {
+    .card {
+        margin-bottom: 20px;   
+    }
+    #customers {
+        text-align: center;
+    }
+    #social {
+        text-align: center;
+    }
+}
+
+/*HEADER*/
+
+h1 {
+    position: absolute;
+    top: 50%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-shadow: 2px 2px 4px #000;
+    text-align: center;
+}
+
+h2 {
+    text-shadow: 2px 2px 4px #000;
+}
+
+.navbar {
+    border-bottom: 2px solid gold;
+    position: sticky;
+}
+
+.nav-link {
+    color: #000;
+}
+
+.nav-link:hover {
+    background-color: gold;
+    color: #fff;
+}
+
+.btn {
+    background: #fff;
+    color: #000;
+    border:2px solid #000;
+}
+
+.btn:hover {
+    background-color: gold;
+}
+
+.pic-slide {
+    width: 768px;
+    height: 750px;
+    padding: 0;
+}
+
+#about {
+    background-color: lightgray;
+    text-align: center;
+    position: sticky;
+    padding: 20px 0 20px 0;
+}
+
+hr {
+    width: 100%;
+}
+
+#cardbox {
+    width: 100%;
+}
+
+
+.card {
+    resize: 60px;
+    padding: 10px;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.cardx {
+    resize: 60px;
+    padding: 10px;
+}
+
+/*FOOTER*/
+
+#social {
+    padding: 4.25rem 0;
+    border-top: 2px solid #000;
+}
+
+#social .fab {
+    font-size: 1.5em;
+    color: gold;
+    border: 2px solid #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 30%;
+    text-align: center;
+    padding: 30% 0;
+    margin-top: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+#social .fab:hover {
+    color:#fff;
+    background: gold;
+}
+
+/*PRODUCTS PAGE*/
+
+#showcase{
+    height:600px;
+    background-image: url("https://images.unsplash.com/photo-1453738773917-9c3eff1db985?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color:#ffffff;
+    border: 3px solid white;
+  }
+
+  .colorx {
+      color: gold;
+      font-size: 30px;
+      text-shadow: 2px 2px 4px black;
+  }
+
+/*CONTACT FOOTER*/
+
+  #footer {
+    padding: 2rem 0;
+    background-color:#888;
+    color:white;
+}
+
+#footer a {
+    color:white;
+    width: 20px;
+    height: 25px;
+}
+
+#footer .fa {
+    padding: 0 5px;
+}
+
+#footer .fab:hover:hover {
+    background-color: gold;
+    border: 2px solid #000;
+    border-radius: 60px;
+}
+
+ /*CONTACT FORM*/
+
+ .contact-form {
+     margin: 10%;
+     padding: 20px;
+ }
+

@@ -1,20 +1,560 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Hello, world!</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fontawesome/css/fontawesome.css">
+  <link rel="stylesheet" type="text/css" href="./lib/css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <title>Music Products</title>
+</head>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  </body>
+<body>
+  <!--HEADER-->
+  <nav class="navbar fixed-top navbar-light bg-light">
+    <a class="navbar-brand" href="./index.html">
+      <img src="https://cdn.pixabay.com/photo/2018/09/07/11/25/graphic-3660457__480.png" width="30" height="30"
+        class="d-inline-block align-top" alt="">
+      Instrument<span style="color: gold">2.0</span>
+    </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./product.html">PRODUCTS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contact.html">CONTACT US</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input id="MyInput" type="search" placeholder="Search" aria-label="Search" onkeyup="searchFunction()">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+  </nav>
+  <!--END HEADER-->
+
+  <!---HERO-->
+  <section id="showcase">
+    <div class="container_main">
+      <h1>Get Your Instruments Here!</h1>
+    </div>
+  </section>
+  <!--END HERO-->
+  <br>
+  <!--PRODUCTS-->
+  <!--PRODUCT1-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="cardx">
+          <div class="card-body">
+            <h1 class="colorx">Types Of Guitars</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="products" id="guitarBass">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1459230995443-0f098868784d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>BASS GUITAR</h2>
+          <p class="prodName">Bass Guitar</p>
+          <p>Price: $1 755</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Right Handed
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                Left Handed
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+        </div>
+      </div>
+    </section>
+    <br>
+    <section class="products" id="semiAcoustic">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1528201907966-756e7e4c5a18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>SEMI ACOUSTIC</h2>
+          <p class="prodName">Semi Acoustic Guitar</p>
+          <p>Price: $1 279</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Right Handed
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                Left Handed
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+
+        </div>
+      </div>
+    </section>
+    <br>
+    <section class="products" id="electricGuitar">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1540281772389-9c107ba8c7c9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>ELECTRIC GUITAR</h2>
+          <p class="prodName">Electric Guitar</p>
+          <p>Price: $1 342</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Right Handed
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                Left Handed
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+
+        </div>
+      </div>
+    </section>
+
+  </div>
+  </div>
+  </div>
+  <!--END PRODUCT1-->
+  <br>
+  <!--PRODUCT2-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="cardx">
+          <div class="card-body">
+            <h1><span style="color: gold">DJ Sets</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="products" id="pioneerDj">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1558106564-a2fc916be2a6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>PIONEER DJ SET</h2>
+          <p class="prodName">Pioneer Dj</p>
+          <p>Price: $3 000</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Black Set
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                White Set
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <section class="products" id="partymixDj">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1549044506-77f03096f704?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>PARTY MIX</h2>
+          <p class="prodName">Party Mix Dj</p>
+          <p>Price: $2 387</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Black Set
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                White Set
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+        </div>
+      </div>
+    </section>
+
+      <br>
+      <section class="products" id="herculesDj">
+        <div class="row">
+          <div class="col-lg-3">
+            <img class="img img-thumbnail"
+              src="https://images.unsplash.com/photo-1461784180009-21121b2f204c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60">
+          </div>
+          <div class="col-lg-9">
+            <h2>HERCULES MIX DJ</h2>
+            <p class="prodName">Hercules Dj</p>
+            <p>Price: $2 500</p>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Black Set
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  White Set
+                </label>
+              </div>
+              <br><br>
+              <button class="btn btn-primary" type="submit">Buy</button>
+  
+          </div>
+        </div>
+      </section>
+  </div>
+  </div>
+  </div>
+  <!--END PRODUCT2-->
+  <br>
+  <!--PRODUCT3-->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="cardx">
+          <div class="card-body">
+            <h1><span style="color: gold">HeadPhones</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="products" id="blackHead">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>BLACK HEADPHONES</h2>
+          <p class="prodName">Black Head</p>
+          <p>Price: $120</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Black Set
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                White Set
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+        </div>
+      </div>
+    </section>
+    <br>
+    <section class="products" id="whiteBeats">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1496957961599-e35b69ef5d7c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>WHITE BEATS</h2>
+          <p class="prodName">White Beats</p>
+          <p>Price: $300</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Black Set
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                White Set
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+      </div>
+    </section>
+    <br>
+    <section class="products" id="raveBeats">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1484704849700-f032a568e944?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>RAVE BEATS</h2>
+          <p class="prodName">Rave Beats</p>
+          <p>Price: $175</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Black Set
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                White Set
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+        </div>
+      </div>
+    </section>
+  </div>
+  </div>
+  </div>
+
+  <!--END PRODUCT3-->
+  <br>
+  <!--PRODUCT4-->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="cardx">
+          <div class="card-body">
+            <h1><span style="color: gold">Others!</span></h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="products" id="keyBoard">
+      <div class="row">
+        <div class="col-lg-3">
+          <img class="img img-thumbnail"
+            src="https://images.unsplash.com/photo-1523297554394-dc159677ffe1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+        </div>
+        <div class="col-lg-9">
+          <h2>KEY BOARD</h2>
+          <p class="prodName">Key Board</p>
+          <p>Price: $175</p>
+          <br>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+              <label class="form-check-label" for="defaultCheck1">
+                Black Set
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+              <label class="form-check-label" for="defaultCheck2">
+                Brown Set
+              </label>
+            </div>
+            <br><br>
+            <button class="btn btn-primary" type="submit">Buy</button>
+
+        </div>
+      </div>
+    </section>
+      <br>
+      <section class="products" id="drums">
+        <div class="row">
+          <div class="col-lg-3">
+            <img class="img img-thumbnail"
+              src="https://images.unsplash.com/photo-1504653601220-f1a8ece25e4a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+          </div>
+          <div class="col-lg-9">
+            <h2>DRUMS2.0</h2>
+            <p class="prodName">Drums</p>
+            <p>Price: $175</p>
+            <br>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                <label class="form-check-label" for="defaultCheck1">
+                  Black Set
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                <label class="form-check-label" for="defaultCheck2">
+                  Brown Set
+                </label>
+              </div>
+              <br><br>
+              <button class="btn btn-primary" type="submit">Buy</button>
+
+          </div>
+        </div>
+      </section>
+        <br>
+        <section class="products" id="violin">
+          <div class="row">
+            <div class="col-lg-3">
+              <img class="img img-thumbnail"
+                src="https://images.unsplash.com/photo-1558556405-3071bd8d3ee6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60">
+            </div>
+            <div class="col-lg-9">
+              <h2>VIOLIN</h2>
+              <p class="prodName">Violin</p>
+              <p>Price: $175</p>
+              <br>
+              <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                  <label class="form-check-label" for="defaultCheck1">
+                    Right Handed
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                  <label class="form-check-label" for="defaultCheck2">
+                    Left Handed
+                  </label>
+                </div>
+                <br><br>
+                <button class="btn btn-primary" type="submit">Buy</button>
+
+            </div>
+          </div>
+        </section>
+  </div>
+  </div>
+  </div>
+  <!--END PRODUCT4-->
+
+  <!--END PRDUCTS-->
+  <br>
+  <!--FOOTER-->
+  <section id="social">
+    <div class="container wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="1s">
+      <div class="row">
+
+        <div class="col-md-6">
+          <h2>Connect with us:</h2>
+          <hr align="left" width="50%">
+          <p>&#169;Instrument<span style="color: gold">2.0</span> by Walter Marikwa 2019</p>
+        </div>
+
+        <div class="col-md-6">
+          <ul class="list-inline">
+            <li class="list-inline-item"><a href="http://facebook.com"><i class="fab fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="http://twitter.com"><i class="fab fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="http://instagram.com"><i class="fab fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.snapchat.com/"><i class="fab fa-snapchat"></i></a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!--SEARCH METHOD-->
+  <script>
+
+    function searchFunction() {
+      var input, filter, prods, p, i, txtValue;
+      input = document.getElementById("MyInput");
+      filter = input.value.toUpperCase();
+      prods = document.getElementsByClassName("products");
+      for (i = 0; i < prods.length; i++) {
+        p = prods[i].getElementsByClassName("prodName")[0];
+        txtValue = p.textContent || p.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          prods[i].style.display = "";
+        } else {
+          prods[i].style.display = "none";
+        }
+      }
+    }
+    
+
+  </script>
+  <!--END SEARCH METHOD-->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
